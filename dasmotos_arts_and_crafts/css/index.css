@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(249, 245, 240);
+  font-family: "Cambria";
+}
+
+#header {
+  background-image: url('../img/pattern.jpeg');
+  font-size: 20px;
+  text-align: center;
+  color: burlywood;
+}
+
+h2 {
+  color: sienna;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(96, 44, 6);
+}
+
+span {
+  color: maroon;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
