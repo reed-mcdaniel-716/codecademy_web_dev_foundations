@@ -39,6 +39,7 @@ html {
 header {
   position: fixed;
   width: 100%;
+  height: 5.3125rem;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -67,15 +68,25 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 header .icon {
   width: 1rem;
   padding-left: .75rem;
+  margin-right: 1.875rem;
 }
 
 header .mobile {
   display: none;
+}
+
+header .desktop.logo {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 760px) {
@@ -86,6 +97,7 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
+    height: 3rem;
   }
 
   header .content {
@@ -108,6 +120,7 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+    border-radius: 0.25rem;
   }
 }
 
