@@ -26,6 +26,8 @@ html {
 
 .image-container img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 760px) {
@@ -98,6 +100,7 @@ header .desktop.logo {
     display: block;
     width: 100%;
     height: 3rem;
+    position: fixed;
   }
 
   header .content {
@@ -125,12 +128,12 @@ header .desktop.logo {
 }
 
 /* Sign Up Section */
-
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url('../images/banner-landingpage.jpg');
 }
 
 #sign-up-cta {
@@ -138,6 +141,10 @@ header .desktop.logo {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-top: 10.625rem;
+  margin-bottom: 10.625rem;
+  margin-left: 6.25rem;
+  padding-top: 2rem;
 }
 
 #sign-up-cta .content {
@@ -168,11 +175,15 @@ header .desktop.logo {
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
 }
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  line-height: 1.4;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -228,6 +239,12 @@ header .desktop.logo {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  column-gap: 2.375rem;
+}
+
+.feature {
+  height: 39.6875rem;
+  width: 16rem;
 }
 
 .feature {
@@ -243,9 +260,14 @@ header .desktop.logo {
   margin: 0 auto;
 }
 
+.feature .content {
+  height: 11.6875rem;
+}
+
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
+  line-height: 1.2;
   font-weight: bold;
   color: #4a4a4a;
 }
@@ -273,11 +295,12 @@ header .desktop.logo {
 @media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
-    padding: 0;
+    padding: 1rem;
+    align-items: center;
   }
 
   .feature {
-    margin: 0;
+    margin: 1rem;
     padding: 1.25rem 1rem 0 1rem;
   }
 }
@@ -308,6 +331,8 @@ header .desktop.logo {
 }
 
 #filters-section .images-container {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
   max-width: 100%;
   padding: 0 1%;
 }
@@ -346,13 +371,13 @@ header .desktop.logo {
 
 #quotes-section {
   background-color: #f3f3f3;
-}
-
-#quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section content {
+}
+
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -370,7 +395,7 @@ header .desktop.logo {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
