@@ -1,0 +1,157 @@
+/* Universal */
+
+:root
+{
+  --light-gray-color: rgb(218, 218, 218);
+  --medium-gray-color: rgb(157, 157, 157);
+  --dark-gray-color: rgb(25, 25, 25);
+}
+
+html, body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light-gray-color);
+  font-family: 'Righteous', cursive;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.photo_credit {
+  font-size: 0.75rem;
+  font-style: italic;
+  position: absolute;
+  padding: 0.75rem;
+  bottom: 0;
+  right: 0;
+}
+
+.photo_container {
+  position: relative;
+}
+
+.photo_credit a {
+  color: white;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Header */
+nav ul {
+  display: flex;
+  flex: 1;
+  align-content: space-around;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 3.5rem;
+}
+
+/* Splash */
+
+#splash {
+  display: flex;
+  flex: 1;
+  color: var(--dark-gray-color);
+  height: 20rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('./images/risen-wang-20jX9b35r_M-unsplash.jpg');
+  justify-content: center;
+  align-items: center;
+}
+
+#splash #welcome {
+  background-color: var(--medium-gray-color);
+  padding: 0.5rem;
+  line-height: 0.8;
+}
+
+#splash h1 {
+  font-size: 3rem;
+}
+
+/* Training */
+#training {
+  display: flex;
+}
+
+.training_style {
+  border:  0.2rem solid black;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+/* Team */
+#team {
+  display: flex;
+  flex: 1;
+  background-color: var(--medium-gray-color);
+}
+
+.trainer_profile {
+  border:  0.2rem solid black;
+  margin: 1rem;
+  padding: 0.5rem;
+  min-height: 16rem;
+  font-size: 0.8rem;
+}
+
+.trainer_photo {
+  min-height: 16rem;
+  height: 70%;
+}
+
+.trainer_photo h3 {
+  background-color: var(--light-gray-color);
+  padding-left: 1rem;
+}
+
+#trainer_a {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('./images/fortune-vieyra-eCKIeu1Lkok-unsplash.jpg');
+  filter: grayscale(90%);
+}
+
+#trainer_b {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('./images/fortune-vieyra-jD4MtXnsJ6w-unsplash.jpg');
+  filter: grayscale(90%);
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Smaller Screen */
+
+@media only screen and (max-width: 680px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #training, #team {
+    flex-direction: column;
+  }
+}
