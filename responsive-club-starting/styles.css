@@ -1,0 +1,110 @@
+/* Universal */
+/*
+Colors pulled from
+https://unsplash.com/photos/VZ97bBOKxw8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink 
+using the coolors.com generator
+*/
+:root {
+  --bdazzled-blue: #205AA6ff;
+  --champagne-pink: #E0D0CAff;
+  --marigold: #EBA03Bff;
+  --purpureus: #964BABff;
+  --dark-sky-blue: #9CC3D7ff;
+  --eerie-black: #181718ff;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+}
+
+body {
+  background-color: var(--eerie-black);
+  background-image: url('./images/diego-mora-barrantes-VZ97bBOKxw8-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  color: var(--champagne-pink);
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+#content_container {
+}
+
+/* Welcome */
+
+#welcome {
+  background-color: var(--purpureus);
+}
+
+/* About */
+
+#about {
+  background-color: var(--marigold);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#features {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.feature_container {
+  background-color: var(--champagne-pink);
+  margin: 1rem;
+  padding: 0.25rem;
+  min-width: 10rem;
+  max-width: 40%;
+}
+
+/* Come Visit Us */
+
+#visit {
+  background-color: var(--bdazzled-blue);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.locations {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+}
+
+.location_container {
+  background-color: var(--dark-sky-blue);
+  margin: 1rem;
+  padding: 0.25rem;
+  min-width: 20rem;
+  min-width: 10rem;
+}
+
+/* Footer */
+
+#footer {
+  background-color: var(--eerie-black);
+  color: var(--champagne-pink);
+  font-size: 1.2rem;
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 800px) {
+  html, body {
+    font-size: 18px;
+  }
+}
